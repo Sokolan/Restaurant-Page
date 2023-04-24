@@ -33,6 +33,7 @@ body, html {
 .tabs-nav {
   display: flex;
   gap: 10px;
+  height: 50px;
 }
 
 .nav-button {
@@ -40,6 +41,17 @@ body, html {
   border: none;
   color: white;
   font-size: 20px;
+  transition-duration: 0.5s;
+
+}
+
+.nav-button:hover {
+  margin-bottom: 15px;
+  transition-duration: 0.5s;
+}
+
+.nav-button.selected {
+  border-bottom: 2px solid white;
 }
 
 .footer {

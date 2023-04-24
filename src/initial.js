@@ -5,24 +5,21 @@ const createLogo = (name) => {
   return logo;
 };
 
+const createNavButton = (buttonName, buttonText) => {
+  const button = document.createElement('button');
+  button.classList.add('nav-button');
+  button.classList.add(`${buttonName}`);
+  button.textContent = buttonText;
+  return button;
+};
+
 const createNav = () => {
   const nav = document.createElement('nav');
   nav.classList.add('tabs-nav');
 
-  const home = document.createElement('button');
-  home.classList.add('nav-button');
-  home.textContent = 'Home';
-  nav.appendChild(home);
-
-  const menu = document.createElement('button');
-  menu.classList.add('nav-button');
-  menu.textContent = 'Menu';
-  nav.appendChild(menu);
-
-  const contact = document.createElement('button');
-  contact.classList.add('nav-button');
-  contact.textContent = 'Contact Us';
-  nav.appendChild(contact);
+  nav.appendChild(createNavButton('home', 'Home'));
+  nav.appendChild(createNavButton('menu', 'Menu'));
+  nav.appendChild(createNavButton('contact', 'Contact Us'));
 
   return nav;
 };
@@ -58,10 +55,10 @@ const createFooter = () => {
 
 const createContentContainer = () => {
   const body = document.createElement('div');
-  body.classList.add('content');
+  body.classList.add('tab-container');
 
   return body;
-}
+};
 
 export default function initialize(restaurantName) {
   const container = document.querySelector('#content');
