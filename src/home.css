@@ -1,0 +1,38 @@
+@font-face {
+  font-family: allura;
+  src: url('./Allura-Regular.ttf');
+}
+
+@font-face {
+  font-family: lobster;
+  src: url('./Lobster-Regular.ttf');
+}
+
+.home-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about {
+  font-family: lobster, sans-serif;
+  font-weight: 100;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px #00000090;
+  color: #ecfeff;
+}
+
+.opening-hours {
+  font-family: lobster, sans-serif;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  text-shadow: 1px 1px 2px #00000090;
+  padding: 20px;
+  font-weight: 500;
+}
+
+.location {
+  font-size: 0.8rem;
+  text-shadow: 1px 1px 2px #00000090;
+  font-weight: 600;
+}

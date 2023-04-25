@@ -60,7 +60,7 @@ const createContentContainer = () => {
   return body;
 };
 
-export default function initialize(restaurantName) {
+export default function initializePage(restaurantName) {
   const container = document.querySelector('#content');
   container.appendChild(createHeader(restaurantName));
   container.appendChild(createContentContainer());
