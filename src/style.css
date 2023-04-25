@@ -83,7 +83,8 @@ body, html {
   height: 50vh;
   padding: 40px;
   border-radius: 20px;
-  border: 2px solid white;
+  border-bottom: 10px solid #5a9ae3;
+  box-shadow: 0 5px 5px 5px rgba(0, 178, 202, 0.435);
   background-color: #0e74e9;
   color: white;
   font-size: 1.1rem;
