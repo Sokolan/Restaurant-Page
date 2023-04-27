@@ -51,8 +51,8 @@ const setEventListeners = () => {
 
 const initializeLogic = () => {
   setEventListeners();
-  menuPageCreate();
-  activeTab = 'menu';
+  contactPageCreate();
+  activeTab = 'contact';
   document.querySelector(`.${activeTab}`).classList.toggle('selected');
 };
 

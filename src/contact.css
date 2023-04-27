@@ -1,0 +1,37 @@
+@font-face {
+  font-family: carter-one;
+  src: url('./CarterOne-Regular.ttf');
+}
+
+.contact-section {
+  font-family: carter-one;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  --seperate-color: white;
+  --seperate-thickness: 3px;
+  border-bottom: var(--seperate-thickness) solid var(--seperate-color);
+}
+
+.contact-section > p {
+  margin: 0;
+}
+
+.section-header {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.section-text {
+  font-style: italic;
+}
+
+.contact-section a {
+  color: rgb(0, 240, 216);
+  font-weight: 600;
+}
+
+.mail {
+  border-bottom: none;;
+}
